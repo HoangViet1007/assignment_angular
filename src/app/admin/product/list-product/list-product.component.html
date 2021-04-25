@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-md-12">
+        <p style="font-size: 18px;font-weight: 560;color: gray;">List of products</p>
+    </div>
+</div>
+<div class="row mb-2">
+    <div class="col-md-4">
+        <input type="text" [(ngModel)]="filterObject.keyword" class="form-control" placeholder="Tìm kiếm..." style="border-radius:0; margin-left: 49px;" (keyup)="search()">
+    </div>
+    <div class="col-md-4">
+        <select class="form-control" style="border-radius:0 ; margin-left:25px" [(ngModel)]="filterObject.cate" (change)="search()">
+            <option value="0">All category</option>
+            <option *ngFor="let c of cate" [value]="c.id">{{c.name}}</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <select class="form-control" style="border-radius:0" [(ngModel)]="filterObject.orderBy" (change)="search()">
+            <option value="0">Show All</option>
+            <option *ngFor="let op of orderCondition" [value]="op.id">{{op.name}}</option>
+        </select>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-warning">
+            <div class="card-header bg-warning">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h3 class="">List product</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered ">
+                        <thead>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th width="100px ">Quantity</th>
+                            <th width="100px ">Category</th>
+                            <th class="text-center " style="width:180px ">
+                                <a href="javascript:;" routerLink="/admin/product/add-product" class="btn btn-dark ">Add products</a>
+                            </th>
+                        </thead>
+                        <tbody *ngIf="dataProduct !=null ">
+                            <tr *ngFor="let pro of dataProduct | 
+                            paginate: { itemsPerPage: 8, currentPage: page , totalItems : totalLength }">
+                                <td>{{pro.id}}</td>
+                                <td>{{pro.name}}</td>
+                                <td>{{pro.price | currency : "VND"}}</td>
+                                <td class="text-center ">
+                                    <span class="badge badge-danger">{{pro.quantity}}</span>
+                                </td>
+                                <td class="text-center ">
+                                    <span class="badge badge-primary">{{pro.category.name}}</span>
+                                </td>
+                                <td class="text-center ">
+                                    <a href="javascript:; " routerLink="/admin/product/product-detail/{{pro.id}}" class="btn btn-success mr-2 "><i class="fa fa-eye " aria-hidden="true "></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11 d-flex justify-content-center align-item-center">
+                    <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

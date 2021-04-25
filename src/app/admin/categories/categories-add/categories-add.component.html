@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="card card-warning">
+            <div class="card-header bg-warning">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h3 class="">List categories</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <form action="" (submit)="saveCate($event)" [formGroup]="cateForm">
+                        <div class="form-group">
+                            <label for=""><b style="color:gray ; font-weight:560">Name categories</b></label>
+                            <input type="text" placeholder="Name..." class="form-control" formControlName="name">
+                        </div>
+
+                        <div class="alert alert-danger" *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
+                            <span class="text-danger" *ngIf="f.name.errors?.required">
+                            Hãy nhập tên danh mục !
+                        </span>
+                            <span class="text-danger" *ngIf="f.name.errors?.minlength">
+                            Tên danh mục cần có ít nhất 4 ký tự !
+                        </span>
+                            <span class="text-danger" *ngIf="f.name.errors?.maxlength">
+                            Tên danh mục không nhiều hơn 20 ký tự !
+                        </span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info mr-2" [disabled]="cateForm.invalid">Save</button>
+                            <a href="javascript:;" class="btn btn-danger" routerLink="/admin/categories/list-categories">Reset</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

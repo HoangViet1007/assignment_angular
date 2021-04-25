@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="card card-warning">
+            <div class="card-header bg-warning">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h3 class="">List factory</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Count</th>
+                            <th class="text-center" style="width:160px">
+                                <a href="javascript:;" class="btn btn-dark" routerLink="/admin/factory/add-factory">Add factory</a>
+                            </th>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let f of factoryData | 
+                            paginate: { itemsPerPage: 3, currentPage: page , totalItems : totalLength }">
+                                <td>{{f.id}}</td>
+                                <td>{{f.name}}</td>
+                                <td class="text-center"><span class="badge badge-success">{{f.products.length}}</span></td>
+                                <td class="text-center">
+                                    <a href="javascript:;" class="btn btn-danger mr-2" routerLink="/admin/factory/edit-factory/{{f.id}}"><i class="fa fa-pencil-square-o " aria-hidden="true "></i></a>
+                                    <a href="javascript:;" class=" btn btn-info" (click)="removefactory(f.id)"><i class="fa fa-trash-o " aria-hidden="true "></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11 d-flex justify-content-center align-item-center">
+                    <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

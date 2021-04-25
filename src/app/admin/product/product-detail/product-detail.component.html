@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-warning">
+            <div class="card-header bg-warning">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h3 class="">Product detail</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Sale</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Category</th>
+                            <th>Factory</th>
+                            <th>Description</th>
+                            <th width="120px" class="text-center">Ql</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngIf="product!=null">
+                                <td>{{product.id}}</td>
+                                <td>{{product.name}}</td>
+                                <td>
+                                    <img [src]="product.image" width="60" height="70" alt="">
+                                </td>
+                                <td>{{product.price | currency : "VND"}}</td>
+                                <td class="text-center"> <span class="badge badge-primary text-white">{{product.sale}}%</span></td>
+                                <td class="text-center"> <span class="badge badge-info text-white">{{product.quantity}}</span> </td>
+                                <td class="text-center"> <span class="badge badge-danger text-white">{{product.status == 0 ? "true" : "false"}}</span></td>
+                                <td>{{product.category.name}}</td>
+                                <td>{{product.factory.name}}</td>
+                                <td>{{product.description}}</td>
+                                <td width="120px">
+                                    <a href="javascript:;" class="btn btn-danger mr-2 " routerLink="/admin/product/edit-product/{{product.id}}"><i class="fa fa-pencil-square-o " aria-hidden="true "></i></a>
+                                    <a href="javascript:;" (click)="removeProduct()" class=" btn btn-info "><i class="fa fa-trash-o " aria-hidden="true "></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <a href="javascript:; " routerLink="/admin/product/list-product" class="btn btn-warning text-white "><i class="fa fa-arrow-left " aria-hidden="true "></i> &ensp; Back to list product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

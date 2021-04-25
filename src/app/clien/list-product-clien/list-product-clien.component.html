@@ -1,0 +1,66 @@
+<!-- Product Shop Section Begin -->
+<section class="product-shop spad">
+    <div class="container">
+        <div class="row mt-4">
+            <h2>List product</h2>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
+                <div class="filter-widget">
+                    <h4 class="fw-title">Categories</h4>
+                    <ul class="filter-catagories" style="margin-left: -33px;">
+                        <li>
+                            <a href="javascrip:;" routerLink="/list-product/0" (click)="search()">All</a>
+                        </li>
+                        <li *ngFor="let c of cate">
+                            <a href="javascript::" routerLink="/list-product/{{c.id}}" (click)="search()">{{c.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10 order-1 order-lg-2">
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <select name="order" class="form-control" style="border-radius: 0;margin-left: -16px;" [(ngModel)]="formFilter.order" (change)="search()">
+                            <option value="">Default</option>
+                            <option *ngFor="let o of order" value="{{o.id}}">{{o.name}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 offset-3">
+                        <input type="text" placeholder="Search..." name="search" class="form-control" style="border-radius: 0;margin-left: -16px;" [(ngModel)]="formFilter.name" (keyup)="search()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item-product" *ngFor="let p of productData | 
+                    paginate: { itemsPerPage: 8, currentPage: page , totalItems : totalLength }">
+                        <div class="item-img">
+                            <img [src]="p.image" alt="">
+                        </div>
+                        <div class="item-detail" style="overflow:hidden">
+                            <div class="item-detail-name-price">
+                                <span style="font-size:13px;font-weight: 500;">{{p.name}}</span> <br>
+                                <span> <del style="font-size: 14px;color: gray;font-weight: 530;">{{p.price}}đ</del> &ensp; <span style="color:#e7ab3c; margin-left: 10px; font-weight:560;">{{p.price - (p.price * p.sale)/100}} <u>đ</u></span></span>
+                            </div>
+
+                            <div class="item-detail-icon">
+                                <a href="javascript:;" routerLink="/product-detail/{{p.id}}" class="btn btn-xem"><i class="fa fa-eye" aria-hidden="true"></i>View detail</a>
+                                <button class="btn btn-xem"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center align-item-center">
+            <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+        </div>
+    </div>
+</div>
+<!-- Product Shop Section End -->

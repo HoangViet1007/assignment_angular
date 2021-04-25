@@ -1,0 +1,81 @@
+.item-product {
+    text-align: center;
+    width: 100%;
+    transition: all 0.5s;
+    width: 207px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.item-img {
+    width: 100%;
+    height: 290px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s
+}
+
+.item-detail {
+    position: relative;
+    height: 100px;
+}
+
+.item-product:hover img {
+    transform: scale(1.06);
+    transition: all 0.5s;
+    opacity: 0.8;
+}
+
+.item-product:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s;
+}
+
+.item-product .item-detail-icon {
+    position: absolute;
+    bottom: -50px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.item-product:hover .item-detail-icon {
+    bottom: 0px;
+    transition: all 0.5s;
+}
+
+.btn-xem {
+    border: 2px solid #e7ab3c;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0%;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.btn-xem:hover {
+    background-color: #e7ab3c;
+    color: white;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.filter-catagories li {
+    list-style: none;
+}
+
+.filter-catagories li a {
+    display: inline-block;
+    color: #636363;
+    font-size: 16px;
+    line-height: 39px;
+    text-decoration: none;
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+    background: #ffc107;
+}

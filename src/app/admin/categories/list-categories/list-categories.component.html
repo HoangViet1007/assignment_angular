@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="card card-warning">
+            <div class="card-header bg-warning">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h3 class="">List categories</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Count</th>
+                            <th class="text-center" style="width:160px">
+                                <a href="javascript:;" class="btn btn-dark" routerLink="/admin/categories/categories-add">Add categories</a>
+                            </th>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let cate of dataCate | 
+                            paginate: { itemsPerPage: 5, currentPage: page , totalItems : totalLength }">
+                                <td>{{cate.id}}</td>
+                                <td>{{cate.name}}</td>
+                                <td class="text-center"> <span class="badge badge-warning">{{cate.products.length}}</span> </td>
+                                <td class="text-center">
+                                    <a href="javascript:;" class="btn btn-danger mr-2" routerLink="/admin/categories/categories-edit/{{cate.id}}"><i class="fa fa-pencil-square-o " aria-hidden="true "></i></a>
+                                    <a href="javascript:;" class=" btn btn-info" (click)="removeCate(cate.id)"><i class="fa fa-trash-o " aria-hidden="true "></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11 d-flex justify-content-center align-item-center">
+                    <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,165 @@
+<!-- Hero Section Begin -->
+<section>
+    <img src="https://storage.googleapis.com/cdn.nhanh.vn/store/662/bn/sb_1617097535_269.jpg" alt="">
+</section>
+<!-- Hero Section End -->
+
+<!-- Banner Section Begin -->
+<div class="banner-section spad" style="margin-top:-50px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="single-banner">
+                    <img src="../../../assets/images/b.jpeg" alt="" width="100%" height="100%">
+                    <div class="inner-text">
+                        <h4>Fashion</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-banner">
+                    <img src="../../../assets/images/b2.jpeg" alt="" width="100%" height="100%">
+                    <div class="inner-text">
+                        <h4>Dynamic</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-banner">
+                    <img src="../../../assets/images/b3.jpeg" alt="" width="100%" height="100%">
+                    <div class="inner-text">
+                        <h4>Luxurious</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Section End -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="../../../assets/images/poster.png" alt="" width="100%;" height="100%;">
+        </div>
+
+        <div class="col-md-9">
+            <div class="text-center mb-3">
+                <h2 class="ml-3 hot-product">Hot products</h2>
+            </div>
+            <!-- <div class="featured__controls">
+                <ul class="text-center">
+                    <li (click)="search1(0)">All</li>
+                    <li *ngFor="let ao of aoCate" (click)="search1(ao.id)">{{ao.name}}</li>
+                </ul>
+
+            </div> -->
+            <div class="product-slider mt-3">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let p of pro">
+                        <div class="item-product">
+                            <div class="item-img">
+                                <img [src]="p.image" alt="">
+                            </div>
+                            <div class="item-detail">
+                                <div class="item-detail-name-price">
+                                    <span style="font-size:13px;font-weight: 500;">{{p.name}}</span> <br>
+                                    <span> <del style="font-size: 14px;color: gray;font-weight: 530;">{{p.price}}đ</del> &ensp; <span style="color:#e7ab3c; margin-left: 10px; font-weight:560;"> {{p.price - (p.price * p.sale)/100}}<u>đ</u></span></span>
+                                </div>
+
+                                <div class="item-detail-icon">
+                                    <a href="javascript:;" routerLink="/product-detail/{{p.id}}" class="btn btn-xem"><i class="fa fa-eye" aria-hidden="true"></i>View detail</a>
+                                    <button class="btn btn-xem"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Deal Of The Week Section Begin-->
+<section class="deal-of-week set-bg spad mt-5" style="background-color:#F4F2E6;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="section-title">
+                    <h2>Deal Of The Week</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br /> do ipsum dolor sit amet, consectetur adipisicing elit </p>
+                    <div class="product-price">
+                        $35.00
+                        <span>/ HanBag</span>
+                    </div>
+                </div>
+                <div class="countdown-timer" id="countdown">
+                    <div class="cd-item">
+                        <span>56</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="cd-item">
+                        <span>12</span>
+                        <p>Hrs</p>
+                    </div>
+                    <div class="cd-item">
+                        <span>40</span>
+                        <p>Mins</p>
+                    </div>
+                    <div class="cd-item">
+                        <span>52</span>
+                        <p>Secs</p>
+                    </div>
+                </div>
+                <a href="#" class="primary-btn" style="background-color: #e7ab3c;color:white; padding: 10px;text-decoration: none;">Shop Now</a>
+            </div>
+            <div class="col-md-6">
+                <img src="../../../assets/images/cap3.png" alt="" width="500px" height="350px" style="background-size: contain;">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Deal Of The Week Section End -->
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="text-center">
+                <h2 class="ml-3">All Product</h2>
+            </div>
+            <div class="featured__controls">
+                <ul class="text-center">
+                    <li (click)="search2(100)">All</li>
+                    <li *ngFor="let p of allCate" (click)="search2(p.id)">{{p.name}}</li>
+                </ul>
+
+            </div>
+            <div class="product-slider">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let p of pro2">
+                        <div class="item-product">
+                            <div class="item-img">
+                                <img [src]="p.image" alt="">
+                            </div>
+                            <div class="item-detail">
+                                <div class="item-detail-name-price">
+                                    <span style="font-size:13px;font-weight: 500;">{{p.name}}</span> <br>
+                                    <span> <del style="font-size: 14px;color: gray;font-weight: 530;">{{p.price}}đ</del> &ensp; <span style="color:#e7ab3c; margin-left: 10px; font-weight:560;"> {{p.price - (p.price * p.sale)/100}}<u>đ</u></span></span>
+                                </div>
+
+                                <div class="item-detail-icon">
+                                    <a href="javascript:;" routerLink="/product-detail/{{p.id}}" class="btn btn-xem"><i class="fa fa-eye" aria-hidden="true"></i>View detail</a>
+                                    <button class="btn btn-xem"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="../../../assets/images/poster2.jpeg" alt="" width="100%;" height="100%;">
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,8 @@
+.my-pagination /deep/ .ngx-pagination .current {
+    background: #ffc107;
+    /* width: 44px;
+    height: 44px;
+    text-align: center;
+    position: relative;
+    top: -3px; */
+}

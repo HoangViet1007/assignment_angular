@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="card card-warning">
+            <div class="card-header bg-warning">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h3 class="">Add factory</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <form action="" (submit)="saveFactory($event)" [formGroup]="factoryForm">
+                        <div class="form-group">
+                            <label for=""><b style="color:gray ; font-weight:560">Name factory</b></label>
+                            <input type="text" placeholder="Name..." class="form-control" formControlName="name">
+                        </div>
+
+                        <div class="alert alert-danger" *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
+                            <span class="text-danger" *ngIf="f.name.errors?.required">
+                            Hãy nhập tên cơ sở sản xuất !
+                        </span>
+                            <span class="text-danger" *ngIf="f.name.errors?.minlength">
+                            Tên cơ sở cần có ít nhất 4 ký tự !
+                        </span>
+                            <span class="text-danger" *ngIf="f.name.errors?.maxlength">
+                            Tên cơ sở không nhiều hơn 50 ký tự !
+                        </span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info mr-2" [disabled]="factoryForm.invalid">Save</button>
+                            <a href="javascript:;" class="btn btn-danger" routerLink="/admin/factory/list-factory">Reset</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,167 @@
+<!-- <div class="row">
+    <div class="col-md-12">
+        <p style="font-size: 18px;font-weight: 560;color: gray;">Add products</p>
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-warning">
+            <div class="card-header bg-warning">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h3 class="">Add product</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- {{createForm.value | json}} -->
+            <!-- /.card-header -->
+            <!-- form start -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <form action="" (submit)="createProduct($event)" [formGroup]="createForm">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Name</b></label>
+                                    <input type="text" placeholder="Name..." class="form-control" name="name" formControlName="name">
+                                    <div class="" *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
+                                        <span class="text-danger" *ngIf="f.name.errors?.required">
+                                            Hãy nhập tên sản phẩm !
+                                        </span>
+                                        <span class="text-danger" *ngIf="f.name.errors?.minlength">
+                                            Tên sản phẩm cần có ít nhất 4 ký tự !
+                                        </span>
+                                        <span class="text-danger" *ngIf="f.name.errors?.maxlength">
+                                                Tên sản phẩm không nhiều hơn 50 ký tự !
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Price</b></label>
+                                    <input type="text" placeholder="Price..." class="form-control" name="price" formControlName="price">
+                                    <div class="" *ngIf="f.price.invalid && (f.price.dirty || f.price.touched)">
+                                        <span class="text-danger" *ngIf="f.price.errors?.required">
+                                            Hãy nhập giá sản phẩm !
+                                        </span>
+                                        <span class="text-danger" *ngIf="f.price.errors?.min">
+                                            Hãy nhập giá hợp lệ cho sản phẩm !
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Sale</b></label>
+                                    <input type="text" placeholder="Sale..." class="form-control" name="sale" formControlName="sale">
+                                    <div class="" *ngIf="f.sale.invalid && (f.sale.dirty || f.sale.touched)">
+                                        <span class="text-danger" *ngIf="f.sale.errors?.required">
+                                            Hãy nhập giảm giá cho sản phẩm !
+                                        </span>
+                                        <span class="text-danger" *ngIf="f.sale.errors?.min">
+                                            Hãy nhập giảm giá hợp lệ cho sản phẩm !
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Quantity</b></label>
+                                    <input type="text" placeholder="Quantity..." class="form-control" name="quantity" formControlName="quantity">
+                                    <div class="" *ngIf="f.quantity.invalid && (f.quantity.dirty || f.quantity.touched)">
+                                        <span class="text-danger" *ngIf="f.quantity.errors?.required">
+                                            Hãy nhập số lượng sản phẩm !
+                                        </span>
+                                        <span class="text-danger" *ngIf="f.quantity.errors?.min">
+                                            Hãy nhập số lượng sản phẩm hợp lệ cho sản phẩm !
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Description</b></label>
+                                    <!-- <input type="text" placeholder="Description..." class="form-control" name="description" formControlName="description"> -->
+                                    <textarea cols="30" rows="5" class="form-control" formControlName="description" placeholder="Description" name="description"></textarea>
+                                    <div class="" *ngIf="f.description.invalid && (f.description.dirty || f.description.touched)">
+                                        <span class="text-danger" *ngIf="f.description.errors?.required">
+                                            Hãy nhập nội dung cho sản phẩm !
+                                        </span>
+                                        <span class="text-danger" *ngIf="f.description.errors?.minlength">
+                                         Nội dung sản phẩm cần có ít nhất 20 ký tự !
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Category</b></label>
+                                    <select name="categoryId" id="" class="form-control" formControlName="categoryId">
+                                        <option value="">--- category ---</option>
+                                        <option *ngFor="let c of cate" value="{{c.id}}">{{c.name}}</option>
+                                    </select>
+                                    <div class="" *ngIf="f.categoryId.invalid && (f.categoryId.dirty || f.categoryId.touched)">
+                                        <span class="text-danger" *ngIf="f.categoryId.errors?.required">
+                                            Hãy nhập danh mục cho sản phẩm !
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Factory</b></label>
+                                    <select name="factoryId" id="" class="form-control" formControlName="factoryId">
+                                        <option value="">--- Factory ---</option>
+                                        <option *ngFor="let f of fac" value="{{f.id}}">{{f.name}}</option>
+                                    </select>
+                                    <div class="" *ngIf="f.factoryId.invalid && (f.factoryId.dirty || f.factoryId.touched)">
+                                        <span class="text-danger" *ngIf="f.factoryId.errors?.required">
+                                            Hãy nhập nơi sản xuất cho sản phẩm !
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for=""><b class="font-weight-bold">Stutas</b></label>
+                                    <select name="categoryId" id="" class="form-control" formControlName="status">
+                                        <option value="">--- status ---</option>
+                                        <option value="0">false</option>
+                                        <option value="1">true</option>
+                                    </select>
+                                    <div class="" *ngIf="f.status.invalid && (f.status.dirty || f.status.touched)">
+                                        <span class="text-danger" *ngIf="f.status.errors?.required">
+                                            Hãy chọn trạng thái hoạt động !
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for=" "><b class="font-weight-bold ">Image</b></label>
+                                    <input type="file" placeholder="Image... " class="image form-control " name="image" (change)="upload($event)" FormControlName="image">
+                                    <div class="" *ngIf="f.image.invalid && (f.image.dirty || f.image.touched)">
+                                        <span class="text-danger" *ngIf="f.image.errors?.required">
+                                            Hãy chọn hình ảnh cho sản phẩm !
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="form-group" *ngIf="createForm.value.image.length > 0">
+                                    <img [src]="createForm.value.image" width="90px" height="90px" style="margin-left: 100px;display:none ;" alt="" class="ig">
+                                </div> -->
+                                <div class="row" *ngIf="createForm.value.image.length > 0">
+                                    <div class="col-6 offset-3">
+                                        <img [src]="createForm.value.image" class="img-thumbnail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-danger mr-2" [disabled]="createForm.invalid">Save</button>
+                                <a href="javascript:; " class="btn btn-info" routerLink="/admin/product/list-product">Cancel</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

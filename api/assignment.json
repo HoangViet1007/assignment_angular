@@ -1,0 +1,364 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Áo Sơ Mi 2102 ",
+      "price": 849000,
+      "sale": 4,
+      "quantity": 82,
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 1,
+      "factoryId": 2,
+      "status": 0,
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201231/sm2102__2_.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Áo Sơ Mi M740",
+      "price": 762000,
+      "sale": 3,
+      "quantity": 57,
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 1,
+      "factoryId": 1,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618233168112?alt=media&token=94dd24af-6558-4e7d-93c3-e96f02b389cf"
+    },
+    {
+      "id": 3,
+      "name": "Quần jean C018",
+      "price": 633000,
+      "sale": 4,
+      "quantity": 51,
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 2,
+      "factoryId": 2,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618166255190?alt=media&token=e64c6a2a-2f18-4ffb-9432-ab198a59f525"
+    },
+    {
+      "id": 4,
+      "name": "Quần jean C021",
+      "price": 728000,
+      "sale": 7,
+      "quantity": 56,
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 2,
+      "factoryId": 2,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618166375448?alt=media&token=cfb9317e-628d-4c2d-a806-32f08a27f413"
+    },
+    {
+      "id": 5,
+      "name": "Giày LA012",
+      "price": 364000,
+      "sale": 6,
+      "quantity": 73,
+      "description": "Sản phẩm 100% là da thật,  đi mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 3,
+      "factoryId": 1,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618249829391?alt=media&token=2d816360-2f5c-4485-a97c-9fd1d2da91ce"
+    },
+    {
+      "id": 6,
+      "name": "Quần jean C013",
+      "price": 654000,
+      "sale": 5,
+      "quantity": 26,
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 2,
+      "factoryId": 1,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618166457206?alt=media&token=36235324-9e35-4ee8-9c5c-e2a2fd68c902"
+    },
+    {
+      "id": 7,
+      "name": "Áo sơ mi 7400",
+      "price": "529000",
+      "sale": "4",
+      "quantity": "40",
+      "description": "Áo 100% làm từ cotton , mặc thoáng mát , chuẩn đẹp trai !",
+      "categoryId": 1,
+      "factoryId": 2,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618317646433?alt=media&token=794c80b1-f61b-4054-b424-2c3b425675d2"
+    },
+    {
+      "id": 8,
+      "name": "Áo sơ mi 7200",
+      "price": "449000",
+      "sale": "4",
+      "quantity": "40",
+      "description": "Áo 100% làm từ cotton , mặc thoáng mát , chuẩn đẹp trai !",
+      "categoryId": 1,
+      "factoryId": 2,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618236462761?alt=media&token=53e5e1f7-b75d-4c15-8a22-99298208f379"
+    },
+    {
+      "name": "Áo phông AP01",
+      "price": "399000",
+      "sale": "2",
+      "quantity": "43",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 7,
+      "factoryId": 1,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618166647700?alt=media&token=f1327c62-c63b-4989-822a-5a5119ebfa1c",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "Áo phông AP02",
+      "price": "319000",
+      "sale": "3",
+      "quantity": "27",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 7,
+      "factoryId": 1,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618166796548?alt=media&token=2db2fafe-3c21-43ad-926d-802f2a675fec"
+    },
+    {
+      "name": "Quần jean C034",
+      "price": "499000",
+      "sale": "3",
+      "quantity": "45",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 2,
+      "factoryId": 1,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618166925596?alt=media&token=077fc2b3-0ca2-4912-b1b3-0897b50e9b6b",
+      "id": 11
+    },
+    {
+      "name": "Áo phông AP05",
+      "price": "429000",
+      "sale": "2",
+      "quantity": "27",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 7,
+      "factoryId": 1,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618167129124?alt=media&token=29a494ed-0630-41a6-9765-f8dc8da3bb68",
+      "id": 12
+    },
+    {
+      "name": "Áo phông AP07",
+      "price": "319000",
+      "sale": "4",
+      "quantity": "40",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 7,
+      "factoryId": 2,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618167295642?alt=media&token=198e8c95-b554-466a-9d3d-ed5694109514",
+      "id": 13
+    },
+    {
+      "name": "Giày C909",
+      "price": "719000",
+      "sale": "3",
+      "quantity": "23",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 3,
+      "factoryId": 4,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618167449355?alt=media&token=7082bd0c-301e-4f46-a1a4-c99cc7d3ba19",
+      "id": 14
+    },
+    {
+      "name": "Balo Da L14",
+      "price": "512000",
+      "sale": "3",
+      "quantity": "34",
+      "description": "Sản phẩm 100% từ da thật , sang trọng năng động , chuẩn đẹp trai !",
+      "categoryId": 4,
+      "factoryId": 2,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618167597871?alt=media&token=3da139fa-04bb-4ffb-8c9f-d54473b56a46",
+      "id": 15
+    },
+    {
+      "name": "Giày Da L134",
+      "price": "812000",
+      "sale": "4",
+      "quantity": "21",
+      "description": "Sản phẩm 100% từ da thật , sang trọng năng động , chuẩn đẹp trai !",
+      "categoryId": 3,
+      "factoryId": 1,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618167767739?alt=media&token=3b902f0a-dab6-4a02-850a-e5845c2840ea",
+      "id": 16
+    },
+    {
+      "name": "Quần Âu QA02",
+      "price": "345000",
+      "sale": "4",
+      "quantity": "14",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 6,
+      "factoryId": 4,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618167857070?alt=media&token=0284dfad-1a97-4cb2-babb-b4ac91e48913",
+      "id": 17
+    },
+    {
+      "name": "Quần Âu QA03",
+      "price": "429000",
+      "sale": "7",
+      "quantity": "23",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 6,
+      "factoryId": 4,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618167955009?alt=media&token=53d3dd36-eb03-4769-bfd3-d18b706b0e69",
+      "id": 18
+    },
+    {
+      "name": "Túi Đeo Chéo L34",
+      "price": "129000",
+      "sale": "2",
+      "quantity": "17",
+      "description": "Sản phẩm 100% từ da thật , sang trọng năng động , chuẩn đẹp trai !",
+      "categoryId": 4,
+      "factoryId": 3,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618168054620?alt=media&token=e2160842-a4b2-4ad9-86c0-3bd853dc3d14",
+      "id": 19
+    },
+    {
+      "id": 20,
+      "name": "Áo phông AP06",
+      "price": "239000",
+      "sale": "2",
+      "quantity": "15",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 7,
+      "factoryId": 2,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618168229022?alt=media&token=235b9fa7-8bc9-48c9-82b9-15a9e5a6d8ec"
+    },
+    {
+      "id": 21,
+      "name": "Quần Âu QA08",
+      "price": "427000",
+      "sale": "4",
+      "quantity": "12",
+      "description": "Sản phẩm 100% là cotton , mặc thoáng mát dẻ chịu , chuẩn đẹp trai !",
+      "categoryId": 6,
+      "factoryId": 3,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618168559823?alt=media&token=7cc29a5b-bb17-4d1f-8589-785f8a351521"
+    },
+    {
+      "name": "Áo sơ mi 7100",
+      "price": "419000",
+      "sale": "5",
+      "quantity": "12",
+      "description": "Áo làm từ 100% cotton , thoáng mát và dẽ chịu , chuẩn đẹp trai !",
+      "categoryId": 1,
+      "factoryId": 1,
+      "status": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618236029030?alt=media&token=a0c8b412-6d35-4df9-a5b1-e52b93178b93",
+      "id": 22
+    },
+    {
+      "name": "Quần jean QA09",
+      "price": "519000",
+      "sale": "3",
+      "quantity": "20",
+      "description": "Quần co dãn 4 chiều mặc chuẩn đẹp trai !",
+      "categoryId": 2,
+      "factoryId": 2,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618236143942?alt=media&token=c190af05-24e3-4f61-8a91-8fae5834861f",
+      "id": 23
+    },
+    {
+      "name": "Quần âu QA04",
+      "price": "329000",
+      "sale": "4",
+      "quantity": "25",
+      "description": "Quần làm từ 100% cotton, mặc thoáng mát chuẩn đẹp trai !",
+      "categoryId": 6,
+      "factoryId": 3,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618236255656?alt=media&token=347f2070-f133-4f7e-8edb-8997db786fb1",
+      "id": 24
+    },
+    {
+      "name": "Giày LA07",
+      "price": "629000",
+      "sale": "4",
+      "quantity": "51",
+      "description": "Giày chuẩn hàng au 100% , đi sướng ko chịu được !",
+      "categoryId": 3,
+      "factoryId": 3,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618236376423?alt=media&token=bddc1755-2d04-49a7-9450-b3e01a08d43b",
+      "id": 25
+    },
+    {
+      "name": "Quần Âu QA012",
+      "price": "539000",
+      "sale": "5",
+      "quantity": "2",
+      "description": "Quần làm từ 100% cotton mặc rất mát và chuẩn đẹp trai !",
+      "categoryId": 6,
+      "factoryId": 1,
+      "status": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/assignment-angular-973ce.appspot.com/o/Uploads%2F1618248415345?alt=media&token=3ef627bd-421c-4809-a8c5-350363db048f",
+      "id": 26
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Áo Sơ Mi"
+    },
+    {
+      "id": 2,
+      "name": "Quần Jean"
+    },
+    {
+      "id": 3,
+      "name": "Giày nam"
+    },
+    {
+      "id": 4,
+      "name": "Balo túi xách"
+    },
+    {
+      "id": 5,
+      "name": "Nước hoa"
+    },
+    {
+      "name": "Quần Âu",
+      "id": 6
+    },
+    {
+      "name": "Áo Phông",
+      "id": 7
+    }
+  ],
+  "factories": [
+    {
+      "id": 1,
+      "name": "Nhà máy phía nam"
+    },
+    {
+      "id": 2,
+      "name": "Nhà máy phía bắc"
+    },
+    {
+      "id": 3,
+      "name": "Nhà máy phía tây"
+    },
+    {
+      "id": 4,
+      "name": "Nhà máy phía đông"
+    }
+  ]
+}
